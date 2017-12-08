@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="myCtrl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Drop down...!!!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+		.mt50{
+				margin-top:50px;
+		}
+		.mt20{
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid mt50">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 menu"> <!--Start of Side Navigation Menu-->
+					<select ng-model="ZoneItems" ng-options="item for item in zones" class="form-control mt20" ng-change="getOptions2()">
+						<option value="" selected="" disabled="">All Zones</option>
+					</select>
+					<select ng-model="DistrictItems" ng-options="item for item in districts" class="form-control mt20" ng-show="isZone" ng-change="getOptions1()">
+						<option value="" selected="" disabled="">All Districts</option>
+					</select>
+					<select ng-model="MuncipalityItems" ng-options="item for item in muncipality" class="form-control mt20" ng-show="isDistrict" ng-change="getOptions3()">
+						<option value="" selected="" disabled="">All Muncipalities</option>
+					</select>
+					<select ng-model="PHCs" ng-options="item for item in phcs" class="form-control noborder calen1 mt20" ng-show="isMuni">
+						<option value="" selected="" disabled="">All PHCs</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
+
+	
+
+

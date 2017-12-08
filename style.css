@@ -1,0 +1,42 @@
+body{
+	font-size: 14px;
+}
+.menu{
+	border:1px solid #fff;
+	background-color:#3397b1;
+	font-size:12px;
+	color:#fff;
+	height:513px;
+	margin-top:30px;
+	padding-right:0px;
+	padding-left:0px;
+}
+.menu li{
+	list-style: none;
+}
+.borderbtm{
+	border-bottom:1px solid #142638;
+}
+.calen{
+	 color:#faff00;
+	     padding:10px;
+}
+.calen1{
+	color:#fff;
+	background-color:#3397b1;
+}
+.noborder{
+	border:none;
+}
+.form-control:focus {
+    border-color: #34495e;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset;
+}
+.panel{
+	    box-shadow: none;
+    border-top: 1px solid #54677a;
+    border-bottom: 1px solid #142638;
+}
+.mt20{
+	margin-top:15px;
+}
